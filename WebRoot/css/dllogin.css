@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	color: #104587;
+	font: 12px/1.5 Arial, Helvetica, sans-serif;
+	background: url(../images/dllgbg.gif) no-repeat center 50px #ffffff;
+}
+
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,table,p,th,td,img
+	{
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	border: 0px;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+.clear {
+	clear: both;
+}
+
+a:link,a:visited {
+	color: #535353;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+input,select,textarea {
+	font-size: 12px;
+}
+
+.dllogin {
+	width: 430px;
+	margin: 0px auto;
+}
+
+.dllogin h1 {
+	width: 239px;
+	height: 43px;
+	background: url(../images/dllogo.png) no-repeat left top;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/dllogo.png",
+		sizingMethod="crop" );
+	margin-top: 150px;
+}
+
+.login {
+	width: 260px;
+	margin: 50px auto 0px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.login ul li {
+	margin-top: 8px;
+	height: 26px;
+}
+
+.login ul li label {
+	float: left;
+	display: block;
+	width: 66px;
+	text-align: right;
+	padding-top: 6px;
+	font-size: 12px;
+	color: #484848;
+}
+
+.login ul li span {
+	float: left;
+	display: block;
+	width: 186px;
+	height: 26px;
+	background-image: url(../images/longbg.gif);
+}
+
+.login ul li span input {
+	height: 20px;
+	line-height: 20px;
+	margin-top: 2px;
+	margin-left: 2px;
+	width: 136px;
+	border-top: #82A1C4 1px solid;
+	border-left: #82A1C4 1px solid;
+	border-right: #C8DCEC 1px solid;
+	border-bottom: #C8DCEC 1px solid;
+	padding-left: 4px;
+}
+
+.login ul li span input.dlname {
+	background: url(../images/tbicon1.gif) #ffffff no-repeat 4px center;
+	padding-left: 20px;
+}
+
+.login ul li span input.dlpwd {
+	background: url(../images/tbicon2.gif) #ffffff no-repeat 4px center;
+	padding-left: 20px;
+}
+
+.login ul li span.yzm {
+	width: 70px;
+	background-image: url(../images/codebg.gif);
+	margin-right: 4px;
+}
+
+.login ul li span.yzm input {
+	width: 56px;
+}
+
+.login ul li p {
+	vertical-align: middle;
+	float: right;
+	width: 80px;
+}
+
+.login ul li.btn {
+	height: 39px;
+	margin-top: 16px;
+}
+
+input.tblg {
+	width: 107px;
+	height: 36px;
+	background: url(../images/dllgbtn.png) no-repeat left top;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/dllgbtn.png",
+		sizingMethod="crop" );
+	border: none;
+	cursor: pointer;
+}
+
+.login a,.login a:visited {
+	color: #025CC1;
+	font-size: 12px;
+	text-decoration: underline;
+}

@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	color: #104587;
+	font: 12px/1.5 Arial, Helvetica, sans-serif;
+	background: url(../images/adminbg.jpg) no-repeat center 50px #90C2FF;
+}
+
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,table,p,th,td,img
+	{
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	border: 0px;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+.clear {
+	clear: both;
+}
+
+a:link,a:visited {
+	color: #535353;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+input,select,textarea {
+	font-size: 12px;
+}
+
+.login {
+	width: 280px;
+	margin: 266px auto 0px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.login ul li {
+	margin-top: 5px;
+	height: 26px;
+}
+
+.login ul li label {
+	float: left;
+	display: block;
+	width: 70px;
+	text-align: right;
+	padding-top: 6px;
+	font-size: 12px;
+}
+
+.login ul li span {
+	float: left;
+	display: block;
+	width: 186px;
+	height: 26px;
+	background-image: url(../images/longbg.gif);
+}
+
+.login ul li span input {
+	height: 18px;
+	line-height: 18px;
+	margin-top: 2px;
+	margin-left: 2px;
+	width: 180px;
+}
+
+.login ul li span.yzm {
+	width: 70px;
+	background-image: url(../images/codebg.gif);
+	margin-right: 4px;
+}
+
+.login ul li span.yzm input {
+	width: 60px;
+}
+
+.login ul li p {
+	vertical-align: middle;
+	float: right;
+	width: 80px;
+}
+
+.emptyInfo {
+	color: red;
+	height: 25px;
+	width: auto;
+	text-align: center;
+	padding-left: 30px;
+}
+
+.errorInfo {
+	color: red;
+	height: 25px;
+	width: auto;
+	text-align: center;
+}
+
+.login ul li.btn {
+	height: 60px;
+}
+
+input.tblg {
+	width: 107px;
+	height: 36px;
+	background: url(../images/dllgbtn.png) no-repeat left top;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/dllgbtn.png",
+		sizingMethod="crop" );
+	border: none;
+	cursor: pointer;
+}
+
+.login a,.login a:visited {
+	color: #025CC1;
+	font-size: 12px;
+	text-decoration: underline;
+}

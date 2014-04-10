@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.ui.theme" value="simple" />
+
+	<package name="letao-default" extends="json-default">
+	    <interceptors>
+	        <interceptor name="userIntercepter" class="com.letao.action.interceptor.UserInterceptor" />
+			<interceptor-stack name="userStack">
+			    <interceptor-ref name="defaultStack" />
+				<interceptor-ref name="userIntercepter" />
+			</interceptor-stack>
+			
+			<interceptor-stack name="customerStack">
+			    <interceptor-ref name="defaultStack" />
+				<interceptor-ref name="customerIntercepter" />
+			</interceptor-stack>
+			<interceptor name="customerIntercepter" class="com.letao.action.interceptor.CustomerInterceptor" />
+	    </interceptors>
+		
+		<global-results>
+		    <result name="userLogin">/WEB-INF/admin/login.jsp</result>
+		    <result name="customerLogin">/WEB-INF/pages/login.jsp</result>
+		</global-results>
+	</package>
+
+	
+	
+
+</struts>

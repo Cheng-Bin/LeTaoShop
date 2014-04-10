@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="LeTaoShop"
+  id="myeclipse.1378549956217"
+  context-root="/LeTaoShop"
+  j2ee-spec="5.0"
+  archive="LeTaoShop.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

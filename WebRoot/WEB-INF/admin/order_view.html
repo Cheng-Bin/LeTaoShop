@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>系统管理 - 订单明细</title>
+	<link type="text/css" rel="stylesheet" href="css/user.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/menubar.js"></script>
+	<script type="text/javascript">
+		var number = 0;
+		var money = 0;
+	</script>
+</head>
+
+<body>
+<div id="header">
+	<div class="header_top">
+		<div class="navbar">
+			<h1>管理后台</h1>
+		</div>
+		<div class="loginbar">
+			<div>
+				<a href="/login_out.html">退出</a>
+			</div>
+			<p>2013-08-20</p>
+		</div>
+	</div>
+    <div class="notice">
+    	<div class="nt1"><a href="/admin/index.html">系统首页</a></div>
+        <div class="nt2"><span class="ntltbg"></span><p>当前位置：系统管理 > 订单明细</p></div>
+        <div class="nt1 nt4"><a href="/login_edit.html">修改密码</a></div>
+  </div>
+</div>
+
+
+<div id="container">
+	<div id="right">
+		<div class="content">
+			<div class="rtbd">
+				<div class="jyjl">
+					<h2><img src="images/ibg1.jpg" />订单明细</h2>
+				</div>
+				<div class="clear"></div>
+				<table class="jyjs_list" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<th>商品编号</th>
+						<th>商品名称</th>
+						<th>价格</th>
+						<th>数量</th>
+						<th>小计</th>
+					</tr>
+					<tr onmouseover="this.className='listhover';" onmouseout="this.className='';">
+						<td>ID</td>
+						<td><a href="pro/${test.proId}.html" target="_blank">HAH</a></td>
+						<td>108</td>
+						<td>20</td>
+						<td>109</td>
+					</tr>
+					<tr>
+						<td>总计费用：</td>
+						<td colspan="4" style="text-align: right;color: red;font-weight: bolder;">
+							共500件商品，费用为800元
+						</td>
+					</tr>
+				</table>
+				<table class="tblist" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<th>收货人</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th>性别</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th>收货地址</th>
+						<td>四川阆中!</td>
+					</tr>
+					<tr>
+						<th>邮编</th>
+						<td>65</td>
+					</tr>
+					<tr>
+						<th>联系电话</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th>手机</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th>QQ</th>
+						<td></td>
+					</tr>
+				</table>
+				<table class="tblist" width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<th>支付状态</th>
+						<td>已支付</td>
+					</tr>
+					<tr>
+						<th>运费选择</th>
+						<td>20</td>
+					</tr>
+					<tr>
+						<th>备注</th>
+						<td>1212</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="tbbtm">
+							<input type="button" value="返回" style="font-size:14px;font-weight:bold;" onclick="history.go(-1)" />
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+   <div id="left">
+		<dl>
+			<dt class="dtlv_close" id="nav_0" onclick="displayNav(0)"><img src="images/unfold.gif" />基本功能</dt>
+			<dd><a href="cfg.html">基本设置</a></dd>
+			<dd><a href="login_edit.html">修改密码</a></dd>
+			<dd><a href="mail.html">邮件设置</a></dd>
+			<dd><a href="ppt.html">幻灯片图片</a></dd>
+			<dd><a href="ppt_add.html">添加幻灯片图片</a></dd>
+			<dd><a href="coml.html">网站留言</a></dd>
+			<dd><a href="page.html">页面管理</a></dd>
+			<dd><a href="page_add.html">添加页面</a></dd>
+			<dd><a href="log.html">系统日志</a></dd>
+		</dl>
+		<dl>
+			<dt class="dtlv_close" id="nav_1" onclick="displayNav(1)"><img src="images/unfold.gif" />公告管理</dt>        
+			<dd><a href="/not.html">公告列表</a></dd>
+			<dd><a href="/not_add.html">添加公告</a></dd>
+		</dl>
+		<dl>
+			<dt class="dtlv_close" id="nav_2" onclick="displayNav(2)"><img src="images/unfold.gif" />文章管理</dt>        
+			<dd><a href="sort.html">类别管理</a></dd>
+			<dd><a href="sort_add.html">添加类别</a></dd>
+			<dd><a href="art.html">文章列表</a></dd>
+			<dd><a href="art_add.html">添加文章</a></dd>
+			<dd><a href="com.html">评论管理</a></dd>
+		</dl>
+		<dl>
+			<dt class="dtlv_close" id="nav_3" onclick="displayNav(3)"><img src="images/unfold.gif" />商城管理</dt>        
+			<dd><a href="prosort.html">类别管理</a></dd>
+			<dd><a href="pro.html">商品列表</a></dd>
+			<dd><a href="pro_add.html">添加商品</a></dd>
+			<dd><a href="procom.html">评论管理</a></dd>
+			<dd><a href="order.html">订单管理</a></dd>
+			<dd><a href="bank.html">财务信息</a></dd>
+			<dd><a href="api.html">支付接口</a></dd>
+			<dd><a href="api_add.html">增加支付接口</a></dd>
+		</dl>
+		<dl>
+			<dt class="dtlv_close" id="nav_4" onclick="displayNav(4)"><img src="images/unfold.gif" />友情链接</dt>        
+			<dd><a href="link.html">链接列表</a></dd>
+			<dd><a href="link_add.html">添加链接</a></dd>
+		</dl>
+		<dl>
+			<dt class="dtlv_close" id="nav_5" onclick="displayNav(5)"><img src="images/unfold.gif" />会员管理</dt>
+			<dd><a href="user.html">会员列表</a></dd>
+		</dl>
+	</div>
+</div>
+
+
+<div id="footer"></div>
+
+</body>
+</html>
